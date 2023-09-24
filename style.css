@@ -37,3 +37,16 @@ footer {
   nav a:hover {
     color: #f1c40f;
   }
+
+  img {
+    width: 80px;
+    height: 80px;
+  }
+
+  #dot {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
+  }
