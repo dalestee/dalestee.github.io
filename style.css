@@ -12,41 +12,41 @@ footer {
     background-color: #333;
     color: #fff;
     padding: 20px;
-  }
+}
   
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  nav li {
-    margin: 0 10px;
-  }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
-    transition: all 0.3s ease;
-  }
-  
-  nav a:hover {
-    color: #f1c40f;
-  }
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
 
-  img {
-    width: 80px;
-    height: 80px;
-  }
+nav li {
+  margin: 0 10px;
+}
 
-  #dot {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: red;
-  }
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: #f1c40f;
+}
+
+img {
+  width: 80px;
+  height: 80px;
+}
+
+#dot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: red;
+}
