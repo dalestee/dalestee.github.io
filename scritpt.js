@@ -11,8 +11,8 @@ function dotInit(){
     offset+=inc
     if (offset > 20)inc = -2
     if (offset < -20)inc = 2
+    dot.style.backgroundImage = "url('/media/bobAnimation/bobMoving_0.png')"
   });
-  dot.style.backgroundImage = "url('/media/bobAnimation/bobSleep_0.png')"
 }
 
 function inconHover(){

@@ -46,8 +46,15 @@ img {
 
 #bob {
   position: absolute;
-  width: 78px;
-  height: 78px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
-  background-image: url("/media/bobAnimation/bobSleep.png");
+  animation: sleepAnimation 2s infinite;
+}
+
+@keyframes sleepAnimation {
+  0%   {background-image: url("/media/bobAnimation/bobSleep_0.png");}
+  33%  {background-image: url("/media/bobAnimation/bobSleep_2.png");}
+  66%  {background-image: url("/media/bobAnimation/bobSleep_1.png");}
+  100% {background-image: url("/media/bobAnimation/bobSleep_0.png");}
 }
