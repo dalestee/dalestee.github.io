@@ -1,60 +1,126 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set background color and text color for the entire page */
 body {
-  background-color: #f3f3f3;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #333;
-  margin: 0;
-  padding: 0;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-}
-  
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-}
-
-nav li {
-  margin: 0 10px;
-}
-
-nav a {
+  background-color: #333;
   color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #222;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 36px;
+}
+
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul li {
+  margin-right: 33%; /* Add spacing between header items */
+}
+
+header nav ul li:last-child {
+  margin-right: 0; /* Remove margin from the last item */
+}
+
+header nav ul li a {
   text-decoration: none;
+  color: #fff;
   font-weight: bold;
-  font-size: 18px;
-  transition: all 0.3s ease;
 }
 
-nav a:hover {
-  color: #f1c40f;
-}
-
-img {
-  width: 40px;
-  height: 40px;
-}
-
-#bob {
+/* Position the canvas behind the main content */
+#animationCanvas {
   position: absolute;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  animation: sleepAnimation 2s infinite;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }
 
-@keyframes sleepAnimation {
-  0%   {background-image: url("/media/bobAnimation/bobSleep_0.png");}
-  33%  {background-image: url("/media/bobAnimation/bobSleep_2.png");}
-  66%  {background-image: url("/media/bobAnimation/bobSleep_1.png");}
-  100% {background-image: url("/media/bobAnimation/bobSleep_0.png");}
+/* Style the main content */
+main {
+  padding: 40px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+/* Style links */
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+/* Style the footer */
+footer {
+  background-color: #222;
+  padding: 20px;
+  text-align: center;
+}
+
+footer nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer nav ul li {
+  margin-right: 20px;
+}
+
+/* Style images inside the footer */
+.icons {
+  width: 30px;
+  height: 30px;
+}
+
+/* Add spacing between icons in the footer */
+footer nav ul li:not(:last-child) {
+  margin-right: 33%;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  header h1 {
+      font-size: 28px;
+  }
+
+  header nav ul {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  header nav ul li {
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
+
+  main {
+      padding: 20px;
+  }
+
+  footer nav ul li {
+      margin-right: 10px;
+  }
+
+  .icons {
+      width: 20px;
+      height: 20px;
+  }
 }
