@@ -43,14 +43,6 @@ header nav ul li a {
   font-weight: bold;
 }
 
-/* Position the canvas behind the main content */
-#animationCanvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
-}
-
 /* Style the main content */
 main {
   padding: 40px;
