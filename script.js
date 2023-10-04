@@ -1,7 +1,7 @@
 let particles = [];
-const num = 10000;
+const num = 2000;
 
-const noiseScale = 0.01/2;
+const noiseScale = 0.001;
 
 function setup() {
   createCanvas(window.innerWidth-100, window.innerHeight);
@@ -13,15 +13,16 @@ function setup() {
   // For a cool effect try uncommenting this line
   // And comment out the background() line in draw
   stroke(255, 50);
+  clear();
 }
 
 function draw() {
-  background(0, 10);
+  background(0, 5);
   for(let i = 0; i < num; i ++) {
     let p = particles[i];
     point(p.x, p.y);
     let n = noise(p.x * noiseScale, p.y * noiseScale, frameCount * noiseScale * noiseScale);
-    let a = 100 * TAU * n;
+    let a = TAU * n;
     p.x += cos(a);
     p.y += sin(a);
     if(!onScreen(p)) {
@@ -29,6 +30,11 @@ function draw() {
       p.y = random(height);
     }
   }
+}
+
+function windowResized() {
+  resizeCanvas(window.innerWidth-100, window.innerHeight);
+  draw();
 }
 
 function mouseReleased() {
