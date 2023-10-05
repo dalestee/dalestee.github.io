@@ -1,23 +1,20 @@
 let particles = [];
 const num = 2000;
 
-const noiseScale = 0.001;
+const noiseScale = 0.01/2;
 
 function setup() {
   createCanvas(window.innerWidth-100, window.innerHeight);
   for(let i = 0; i < num; i ++) {
     particles.push(createVector(random(width), random(height)));
   }
-  
   stroke(255);
-  // For a cool effect try uncommenting this line
-  // And comment out the background() line in draw
-  stroke(255, 50);
+  point(255)
   clear();
 }
 
 function draw() {
-  background(0, 5);
+  background(0, 10);
   for(let i = 0; i < num; i ++) {
     let p = particles[i];
     point(p.x, p.y);
@@ -30,11 +27,6 @@ function draw() {
       p.y = random(height);
     }
   }
-}
-
-function windowResized() {
-  resizeCanvas(window.innerWidth-100, window.innerHeight);
-  draw();
 }
 
 function mouseReleased() {

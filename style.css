@@ -43,6 +43,11 @@ header nav ul li a {
   font-weight: bold;
 }
 
+/* Style for canvas element */
+canvas {
+  z-index: -1;
+}
+
 /* Style the main content */
 main {
   padding: 40px;
