@@ -19,7 +19,7 @@ function draw() {
     let p = particles[i];
     point(p.x, p.y);
     let n = noise(p.x * noiseScale, p.y * noiseScale, frameCount * noiseScale * noiseScale);
-    let a = TAU * n;
+    let a = 5 * n;
     p.x += cos(a);
     p.y += sin(a);
     if(!onScreen(p)) {
