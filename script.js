@@ -1,15 +1,17 @@
 let particles = [];
-const numberParticles = 1000;
+const numberParticles = 500;
 
-const noiseScale = 0.001/2;
+const noiseScale = 0.01/2;
 
 const speedX = 1;
 const speedY = 1;
 
-const rotationScale = 6;
+const rotationScale = 10;
+
+const opacity = 10;
 
 function setup() {
-  createCanvas(window.innerWidth-100, window.innerHeight);
+  createCanvas(800, 400);
   for(let i = 0; i < numberParticles; i ++) {
     particles.push(createVector(random(width), random(height)));
   }
@@ -19,7 +21,7 @@ function setup() {
 }
 
 function draw() {
-  background(0, 10);
+  background(0, opacity);
   for(let i = 0; i < numberParticles; i ++) {
     let p = particles[i];
     point(p.x, p.y);
@@ -33,10 +35,6 @@ function draw() {
       p.y = random(height);
     }
   }
-}
-
-function mouseReleased() {
-  noiseSeed(millis());
 }
 
 function onScreen(v) {

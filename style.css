@@ -10,6 +10,9 @@ body {
   background-color: #333;
   color: #fff;
   font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column; /* Set the flex direction to column */
+  min-height: 100vh; /* Set a minimum height to the body */
 }
 
 /* Style the header */
@@ -45,12 +48,22 @@ header nav ul li a {
 
 /* Style for canvas element */
 canvas {
-  z-index: -1;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #fff;
+  border-radius: 3px;
 }
 
 /* Style the main content */
 main {
   padding: 40px;
+  flex: 1;
+}
+
+#config {
+  width: auto;
+  height: 100px;
+  background-color: #222;
 }
 
 section {
@@ -110,6 +123,15 @@ footer nav ul li:not(:last-child) {
 
   main {
       padding: 20px;
+  }
+
+  canvas {
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    max-width: 100%;
+    height: auto;
   }
 
   footer nav ul li {
