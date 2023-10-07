@@ -1,11 +1,16 @@
 let particles = [];
-const num = 2000;
+const numberParticles = 1000;
 
-const noiseScale = 0.01/2;
+const noiseScale = 0.001/2;
+
+const speedX = 1;
+const speedY = 1;
+
+const rotationScale = 6;
 
 function setup() {
   createCanvas(window.innerWidth-100, window.innerHeight);
-  for(let i = 0; i < num; i ++) {
+  for(let i = 0; i < numberParticles; i ++) {
     particles.push(createVector(random(width), random(height)));
   }
   stroke(255);
@@ -15,13 +20,13 @@ function setup() {
 
 function draw() {
   background(0, 10);
-  for(let i = 0; i < num; i ++) {
+  for(let i = 0; i < numberParticles; i ++) {
     let p = particles[i];
     point(p.x, p.y);
     let n = noise(p.x * noiseScale, p.y * noiseScale, frameCount * noiseScale * noiseScale);
-    let a = TAU * n;
-    p.x += cos(a);
-    p.y += sin(a);
+    let a = rotationScale * n;
+    p.x += cos(a)*speedX;
+    p.y += sin(a)*speedY;
     if(!onScreen(p)) {
       p.x = random(width);
       p.y = random(height);
