@@ -27,6 +27,7 @@ function draw() {
     let a = rotationScale * n;
     p.x += cos(a)*speedX;
     p.y += sin(a)*speedY;
+
     if(!onScreen(p)) {
       p.x = random(width);
       p.y = random(height);
