@@ -1,14 +1,14 @@
 let particles = [];
-const numberParticles = 500;
+const numberParticles = 200;
 
-const noiseScale = 0.01/2;
+const noiseScale = 0.001;
 
 const speedX = 1;
 const speedY = 1;
 
-const rotationScale = 50;
+const rotationScale = 150;
 
-const opacity = 0;
+const opacity = 10;
 
 const color = [125,255,155];
 
