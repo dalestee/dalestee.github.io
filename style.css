@@ -15,6 +15,36 @@ body {
   min-height: 100vh; /* Set a minimum height to the body */
 }
 
+.input {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #223;
+  outline: none;
+  text-decoration: none;
+  border: none;
+  color: white;
+  border-bottom: 0.1em solid gray;
+}
+
+.input:focus {
+  border-bottom: 0.1em solid white;
+}
+
+.button {
+  background-color: #333;
+  color: white;
+  margin-left: 85px;
+}
+
+.button:focus {
+  border-bottom: 0.1em solid white;
+}
+
+.menu:hover {
+  color: lightblue;
+}
+
 /* Style the header */
 header {
   background-color: #222;
@@ -57,12 +87,13 @@ canvas {
 /* Style the main content */
 main {
   padding: 40px;
-  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #config {
-  width: auto;
-  height: 100px;
+  width: fit-content;
+  height: fit-content;
   background-color: #222;
   padding: 20px;
 }

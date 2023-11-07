@@ -41,6 +41,15 @@ function onScreen(v) {
   return v.x >= 0 && v.x <= width && v.y >= 0 && v.y <= height;
 }
 
+function randomize() {
+  numberParticles = Math.floor(Math.random() * 1000);
+  noiseScale = Math.random() / 1000;
+  speedX = Math.random() * 10;
+  speedY = Math.random() * 10;
+  rotationScale = Math.random() * 100;
+  color = [Math.random() * 255, Math.random() * 255, Math.random() * 255];
+}
+
 function applyChanges() {
   clear()
   let numberParticlesInput = document.getElementById("particlesChoice");
@@ -63,6 +72,7 @@ function applyChanges() {
   if (color[0] < 1 && color[1] < 1 && color[2] < 1) {
     color = [0, 255, 0];
   }
+
   console.log(numberParticles, noiseScale, speedX, speedY, rotationScale, opacity, color)
   noiseSeed(millis());
   setup()

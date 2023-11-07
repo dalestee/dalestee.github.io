@@ -10,15 +10,15 @@
         <h1>My Portfolio</h1>
         <nav>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a class="menu" href="#about">About</a></li>
+                <li><a class="menu" href="#projects">Projects</a></li>
+                <li><a class="menu" href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
       <section id="about">
-        <h2>About Me</h2>
+        <h2 style="text-align: center;">About Me</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis omnis minima, enim, porro quisquam vitae consequatur nostrum quam error quis ullam eligendi ipsum, voluptatem impedit est illo at similique earum?</p>
       </section>
       <section id="projects">
@@ -35,34 +35,35 @@
         </ul>
       </section>
       <div id="config">
-        <button onclick="applyChanges()">reset/apply</button>
-        <button>surprise me!</button>
+        <button class="button" onclick="applyChanges()">reset/apply</button>
+        <button class="button" onclick="randomize()">surprise me!</button>
+        <br>
         <label for="noiseScaleChoice">Noise scale (0.00001 to 1):</label>
-        <input type="number" id="noiseScaleChoice" min="0.00001" max="1">
-
+        <input class= "input" type="number" id="noiseScaleChoice" min="0.00001" max="1">
+        <br>
         <label for="particlesChoice">Number of particles (1 to 2000):</label>
-        <input type="number" id="particlesChoice">
-
+        <input class= "input" type="number" id="particlesChoice">
+        <br>
         <label for="opacityChoice">Opacity (0 to 100):</label>
-        <input type="number" id="opacityChoice" min="0" max="100">
-
+        <input class= "input" type="number" id="opacityChoice" min="0" max="100">
+        <br>
         <label for="speedXChoice">Speed X (1 to 50):</label>
-        <input type="number" id="speedXChoice" min="1" max="50">
-
+        <input class= "input" type="number" id="speedXChoice" min="1" max="50">
+        <br>
         <label for="speedYChoice">Speed Y (1 to 50):</label>
-        <input type="number" id="speedYChoice" min="1" max="50">
-
+        <input class= "input" type="number" id="speedYChoice" min="1" max="50">
+        <br>
         <label for="rotationChoice">Rotation scale (1 to 150):</label>
-        <input type="number" id="rotationChoice" min="0" max="150">
-
+        <input class= "input" type="number" id="rotationChoice" min="0" max="150">
+        <br>
         <label for="redChoice">Red (0 to 255):</label>
-        <input type="number" id="redChoice" min="0" max="255">
-
+        <input class= "input" type="number" id="redChoice" min="0" max="255">
+        <br>
         <label for="greenChoice">Green (0 to 255):</label>
-        <input type="number" id="greenChoice" min="0" max="255">
-
+        <input class= "input" type="number" id="greenChoice" min="0" max="255">
+        <br>
         <label for="blueChoice">Blue (0 to 255):</label>
-        <input type="number" id="blueChoice" min="0" max="255">
+        <input class= "input" type="number" id="blueChoice" min="0" max="255">
 
       </div>
     </main>
