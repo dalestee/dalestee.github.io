@@ -69,6 +69,9 @@ function applyChanges() {
   rotationScale = rotationScaleInput.value || 30;
   opacity = opacityInput.value || 10;
   color = [colorInput1.value || 0, colorInput2.value || 0, colorInput3.value || 0];
+
+  console.log(numberParticles, noiseScale, speedX, speedY, rotationScale, opacity, color);
+
   if (color[0] < 1 && color[1] < 1 && color[2] < 1) {
     color = [0, 255, 0];
   }

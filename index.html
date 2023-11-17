@@ -2,38 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <title>Godinat Caetano</title>
 </head>
 <body>
     <header>
-        <h1>My Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a class="menu" href="#about">About</a></li>
-                <li><a class="menu" href="#projects">Projects</a></li>
-                <li><a class="menu" href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Godinat Caetano</h1>
+            <div class="bar">
+                <div><a class="menu" href="#about">About</a></div>
+                <div><a class="menu" href="#projects">Projects</a></div>
+                <div><a class="menu" href="#contact">Contact</a></div>
+            </div>
     </header>
     <main>
-      <section id="about">
-        <h2 style="text-align: center;">About Me</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis omnis minima, enim, porro quisquam vitae consequatur nostrum quam error quis ullam eligendi ipsum, voluptatem impedit est illo at similique earum?</p>
-      </section>
-      <section id="projects">
-        <h2>My Projects</h2>
-        <ul>
-          <li>
-            <h3>Project 1</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero veritatis ipsa labore rem aliquid accusantium deleniti aspernatur ullam non, suscipit sed? Ipsum corrupti repellat sunt laboriosam, obcaecati similique praesentium rerum.</p>
-          </li>
-          <li>
-            <h3>Project 2</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto necessitatibus repellat minima voluptas quo ea, sed, sint praesentium obcaecati ex recusandae. Maiores libero numquam quisquam accusantium enim, veritatis laborum illo.</p>
-          </li>
-        </ul>
-      </section>
       <div id="config">
         <button class="button" onclick="applyChanges()">reset/apply</button>
         <button class="button" onclick="randomize()">surprise me!</button>
@@ -68,27 +49,23 @@
       </div>
     </main>
     <footer>
-        <nav>
-            <ul>
-                <li>
-                    <a href="mailto:caetano.godinat@etu.u-bordeaux.fr"> 
-                    <img class="icons" src="/media/email-modified.png" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/dalestee/"> 
-                    <img class="icons" src="/media/github-mark-white.png" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/caetano-godinat-849980270/"> 
-                    <img class="icons" src="/media/LI-In-Bug.png" alt="">
-                    </a>
-                </li>
-            </ul>
-        </nav>
+      <div>
+        <a href="mailto:caetano.godinat@etu.u-bordeaux.fr"> 
+        <img class="icons" src="media/email-modified.png" alt="">
+        </a>
+      </div>
+      <div>
+        <a href="https://github.com/dalestee/"> 
+        <img class="icons" src="media/github-mark-white.png" alt="">
+        </a>
+      </div>
+      <div>
+        <a href="https://www.linkedin.com/in/caetano-godinat-849980270/"> 
+        <img class="icons" src="media/LI-In-Bug.png" alt="">
+        </a>
+      </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
-    <script src="/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
