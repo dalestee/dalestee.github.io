@@ -10,10 +10,10 @@ let rotationScale = 150;
 
 let opacity = 10;
 
-let color = [125,255,155];
+let color = [20,44,240];
 
 function setup() {
-  createCanvas(800, 400);
+  createCanvas(1000, 685);
   for(let i = 0; i < numberParticles; i ++) {
     particles.push(createVector(random(width), random(height)));
   }
@@ -42,38 +42,37 @@ function onScreen(v) {
 }
 
 function randomize() {
+  clear()
   numberParticles = Math.floor(Math.random() * 1000);
   noiseScale = Math.random() / 1000;
   speedX = Math.random() * 10;
   speedY = Math.random() * 10;
   rotationScale = Math.random() * 100;
   color = [Math.random() * 255, Math.random() * 255, Math.random() * 255];
+  opacity = Math.random() * 50;
+  console.log("color: "+color)
 }
 
 function applyChanges() {
   clear()
-  let numberParticlesInput = document.getElementById("particlesChoice");
   let noiseScaleInput = document.getElementById("noiseScaleChoice");
   let rotationScaleInput = document.getElementById("rotationChoice");
   let speedXInput = document.getElementById("speedXChoice");
   let speedYInput = document.getElementById("speedYChoice");
-  let opacityInput = document.getElementById("opacityChoice");
   let colorInput1 = document.getElementById("redChoice");
   let colorInput2 = document.getElementById("greenChoice");
   let colorInput3 = document.getElementById("blueChoice");
 
-  numberParticles = numberParticlesInput.value || 200;
   noiseScale = noiseScaleInput.value || 0.001;
   speedX = speedXInput.value || 1;
   speedY = speedYInput.value || 1;
   rotationScale = rotationScaleInput.value || 30;
-  opacity = opacityInput.value || 10;
   color = [colorInput1.value || 0, colorInput2.value || 0, colorInput3.value || 0];
 
   console.log(numberParticles, noiseScale, speedX, speedY, rotationScale, opacity, color);
 
   if (color[0] < 1 && color[1] < 1 && color[2] < 1) {
-    color = [0, 255, 0];
+    color = [20, 40, 240];
   }
 
   console.log(numberParticles, noiseScale, speedX, speedY, rotationScale, opacity, color)
