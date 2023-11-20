@@ -5,6 +5,9 @@
     --quaternary-color: #1fc2b4;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&family=Ubuntu:ital,wght@0,500;1,700&display=swap');
+
+
 /* Body styles */
 body {
     background-color: var(--primary-color);
@@ -13,6 +16,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    font-family: 'montserrat', sans-serif;
 }
   
 /* Header styles */
@@ -23,6 +27,24 @@ header {
     color: var(--quaternary-color);
     padding: 20px;
     background: linear-gradient(to top, #140f2b 0%, #1c1344 100%);
+/* Fonts */
+    font-family: 'ubuntu', sans-serif;
+}
+
+#division {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#left {
+    color: var(--tertiary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:baseline;
+    line-height: 1.6;
 }
 
 #arts {
@@ -38,6 +60,7 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    line-height: 1.6;
 }
 
 .description {
@@ -45,7 +68,7 @@ main {
 }
 
 h1 {
-    color: var(--);
+    color: var(--quaternary-color);
     font-size: 32px;
     margin-bottom: 10px;
     text-align: center;
