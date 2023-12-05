@@ -1,8 +1,8 @@
 :root{
     --secondary-color: #1c1344;
     --primary-color: #140f2b;
-    --tertiary-color: #0D7377;
-    --quaternary-color: #1fc2b4;
+    --tertiary-color: rgba(255, 255, 255, 0.521);
+    --quaternary-color: whitesmoke;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&family=Ubuntu:ital,wght@0,500;1,700&display=swap');
@@ -47,6 +47,14 @@ header {
     line-height: 1.6;
 }
 
+#right {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
 #arts {
     display: flex;
     flex-direction: column;
@@ -54,10 +62,38 @@ header {
     align-items: center;
 }
 
+#icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: -webkit-fill-available;
+}
+
+.experience {
+    display: flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.experience * {
+    margin: 20px;
+    color: var(--tertiary-color);
+
+}
+
+.experience:hover {
+    background-color:#252233;
+    color: whitesmoke;
+}
+
 /* Main styles */
 main {
     padding: 20px;
     display: flex;
+    width: fit-content;
+    height: fit-content;
     flex-direction: row;
     justify-content: space-around;
     line-height: 1.6;
@@ -78,6 +114,11 @@ p {
     color: var(--tertiary-color);
     font-size: 16px;
     line-height: 1.5;
+}
+
+span {
+    color: var(--quaternary-color);
+    font-weight: bold;
 }
 
 ul {
