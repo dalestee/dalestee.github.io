@@ -35,17 +35,18 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
 }
 
 #left {
-    color: var(--tertiary-color);
+    color: var(--terinary-color);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items:baseline;
+    height: 100%;
     line-height: 1.6;
     position: sticky;
+    top: 3rem;
 }
 
 #right {
@@ -66,7 +67,7 @@ header {
 #icon {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content:space-between;
     width: -webkit-fill-available;
 }
 
@@ -112,6 +113,10 @@ header {
     color: whitesmoke;
 }
 
+.preview {
+    height: 5rem;
+    width: auto;
+}
 /* Main styles */
 main {
     padding: 20px;

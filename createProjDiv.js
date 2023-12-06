@@ -24,7 +24,6 @@ function readJson() {
         var technologies = project.technologies;
         var newDiv = createProjectDiv(name, description, image, link, technologies);
         var rightDiv = document.getElementById("projects");
-        console.log(rightDiv);
         rightDiv.appendChild(newDiv);
       }
     });
@@ -83,6 +82,7 @@ function createExperienceDiv(company, role, date, description, link) {
   
     // Create the description div
     var descriptionDiv = document.createElement("div");
+    var projDiv = document.createElement("div");
     descriptionDiv.className = "description";
   
     // Create and append the h4, h5, and h6 elements
@@ -90,23 +90,21 @@ function createExperienceDiv(company, role, date, description, link) {
     h4.textContent = name;
     descriptionDiv.appendChild(h4);
   
-    var image = document.createElement("img");
-    image.src = image;
-    image.style.width = "100%";
-    image.style.height = "auto";
-    descriptionDiv.appendChild(image);
+    var imageb = document.createElement("img");
+    imageb.className = "preview";
+    imageb.src = image;
+    projDiv.appendChild(imageb);
   
     // Append the description div to the main div
     experienceDiv.appendChild(descriptionDiv);
   
     // Create the proj div
-    var projDiv = document.createElement("div");
     projDiv.className = "proj";
   
     // Create and append the p element
     var p = document.createElement("p");
     p.textContent = description;
-    projDiv.appendChild(p);
+    descriptionDiv.appendChild(p);
   
     // Append the proj div to the main div
     experienceDiv.appendChild(projDiv);
