@@ -10,20 +10,33 @@ function readJson() {
         var role = experience.role;
         var date = experience.date;
         var description = experience.description;
-        var newDiv = createExperienceDiv(company, role, date, description);
+        var link = experience.link;
+        var newDiv = createExperienceDiv(company, role, date, description, link);
         var rightDiv = document.getElementById("experiences");
+        rightDiv.appendChild(newDiv);
+      }
+      for (var i = 0; i < obj.projects.length; i++) {
+        var project = obj.projects[i];
+        var name = project.name;
+        var description = project.description;
+        var image = project.image;
+        var link = project.link;
+        var technologies = project.technologies;
+        var newDiv = createProjectDiv(name, description, image, link, technologies);
+        var rightDiv = document.getElementById("projects");
+        console.log(rightDiv);
         rightDiv.appendChild(newDiv);
       }
     });
 }
       
 
-function createExperienceDiv(company, role, date, description) {
+function createExperienceDiv(company, role, date, description, link) {
     // Create the main div
     var experienceDiv = document.createElement("div");
     experienceDiv.className = "experience";
     experienceDiv.style.cursor = "pointer";
-    experienceDiv.onclick = function() { window.location = 'https://twitter.com/namecteam' };
+    experienceDiv.onclick = function() { window.location = link; };
   
     // Create the description div
     var descriptionDiv = document.createElement("div");
@@ -41,6 +54,47 @@ function createExperienceDiv(company, role, date, description) {
     var h6 = document.createElement("h6");
     h6.textContent = date;
     descriptionDiv.appendChild(h6);
+  
+    // Append the description div to the main div
+    experienceDiv.appendChild(descriptionDiv);
+  
+    // Create the proj div
+    var projDiv = document.createElement("div");
+    projDiv.className = "proj";
+  
+    // Create and append the p element
+    var p = document.createElement("p");
+    p.textContent = description;
+    projDiv.appendChild(p);
+  
+    // Append the proj div to the main div
+    experienceDiv.appendChild(projDiv);
+  
+    // Return the main div
+    return experienceDiv;
+  }
+
+  function createProjectDiv(name, description, image, link, technologies) {
+    // Create the main div
+    var experienceDiv = document.createElement("div");
+    experienceDiv.className = "experience";
+    experienceDiv.style.cursor = "pointer";
+    experienceDiv.onclick = function() { window.location = link; };
+  
+    // Create the description div
+    var descriptionDiv = document.createElement("div");
+    descriptionDiv.className = "description";
+  
+    // Create and append the h4, h5, and h6 elements
+    var h4 = document.createElement("h4");
+    h4.textContent = name;
+    descriptionDiv.appendChild(h4);
+  
+    var image = document.createElement("img");
+    image.src = image;
+    image.style.width = "100%";
+    image.style.height = "auto";
+    descriptionDiv.appendChild(image);
   
     // Append the description div to the main div
     experienceDiv.appendChild(descriptionDiv);

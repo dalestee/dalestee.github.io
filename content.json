@@ -4,47 +4,38 @@
             "company": "NAMEC",
             "role": "Software Engineer",
             "date": "2022 - present",
-            "description": "NAMEC is a team of the SSL league, we are currently working on the software of a robot for the SSL league. I am working on the software of the robot, more specifically on the vision part."
+            "description": "NAMEC is a team of the SSL league, we are currently working on the software of a robot for the SSL league. I am working on the software of the robot, more specifically on the vision part.",
+            "link": "https://twitter.com/namecteam"
         },
         {
-            "company": "Company Name",
-            "role": "Software Engineer",
-            "date": "2021-09-02",
-            "description": "Developing and maintaining software applications"
-        },
-        {
-            "company": "Company Name",
-            "role": "Software Engineer",
-            "date": "2021-09-03",
-            "description": "Developing and maintaining software applications"
+            "company": "Université de Bordeaux",
+            "role": "BUT Informatique",
+            "date": "2022 - present",
+            "description": "I am currently studying at the University of Bordeaux in the field of computer science. I am in the second year of the BUT Informatique and its a 3 years degree.",
+            "link": "https://www.iut.u-bordeaux.fr/general/but-info/"
         }
     ],
     "projects": [
         {
-            "name": "Project Name",
-            "description": "Project Description",
+            "name": "Genrative Art",
+            "description": "Js projects using p5.js or just a canvas to generate art",
+            "image":"media/js.png",
+            "link": "generativeArt.html",
             "technologies": [
-                "Technology 1",
-                "Technology 2",
-                "Technology 3"
+                "P5.js",
+                "none",
+                "none"
             ]
         },
         {
-            "name": "Project Name",
-            "description": "Project Description",
+            "name": "tron",
+            "description": "tron game with 2 players",
+            "image":"media/js.png",
+            "link": "generativeArt.html",
             "technologies": [
-                "Technology 1",
-                "Technology 2",
-                "Technology 3"
-            ]
-        },
-        {
-            "name": "Project Name",
-            "description": "Project Description",
-            "technologies": [
-                "Technology 1",
-                "Technology 2",
-                "Technology 3"
+                "P5Play.js",
+                "none",
+                "none"
             ]
         }
     ]

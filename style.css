@@ -91,6 +91,27 @@ header {
     color: whitesmoke;
 }
 
+.projects {
+    display: flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.projects * {
+    margin: 20px;
+    color: var(--tertiary-color);
+
+}
+
+.projects:hover {
+    background-color:#252233;
+}
+.projects:hover .description * {
+    color: whitesmoke;
+}
+
 /* Main styles */
 main {
     padding: 20px;
