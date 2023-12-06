@@ -1,3 +1,23 @@
+function readJson() {
+  fetch("content.json")
+    .then(response => response.text())
+    .then(data => {
+      var obj = JSON.parse(data);
+      var experiences = obj.experiences;
+      for (var i = 0; i < experiences.length; i++) {
+        var experience = experiences[i];
+        var company = experience.company;
+        var role = experience.role;
+        var date = experience.date;
+        var description = experience.description;
+        var newDiv = createExperienceDiv(company, role, date, description);
+        var rightDiv = document.getElementById("experiences");
+        rightDiv.appendChild(newDiv);
+      }
+    });
+}
+      
+
 function createExperienceDiv(company, role, date, description) {
     // Create the main div
     var experienceDiv = document.createElement("div");
@@ -42,6 +62,4 @@ function createExperienceDiv(company, role, date, description) {
   }
   
   // Use the function to create a new div and append it to the body
-  var newDiv = createExperienceDiv("New Company", "New Role", "New Date", "New Description");
-  var rightDiv = document.getElementById("right");
-    rightDiv.appendChild(newDiv);
+  readJson();

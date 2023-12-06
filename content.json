@@ -1,5 +1,51 @@
-{
-    "role": "Software Engineer",
-    "date": "2021-09-01",
-    "description": "Developing and maintaining software applications"
+{   
+    "experiences": [
+        {
+            "company": "NAMEC",
+            "role": "Software Engineer",
+            "date": "2022 - present",
+            "description": "NAMEC is a team of the SSL league, we are currently working on the software of a robot for the SSL league. I am working on the software of the robot, more specifically on the vision part."
+        },
+        {
+            "company": "Company Name",
+            "role": "Software Engineer",
+            "date": "2021-09-02",
+            "description": "Developing and maintaining software applications"
+        },
+        {
+            "company": "Company Name",
+            "role": "Software Engineer",
+            "date": "2021-09-03",
+            "description": "Developing and maintaining software applications"
+        }
+    ],
+    "projects": [
+        {
+            "name": "Project Name",
+            "description": "Project Description",
+            "technologies": [
+                "Technology 1",
+                "Technology 2",
+                "Technology 3"
+            ]
+        },
+        {
+            "name": "Project Name",
+            "description": "Project Description",
+            "technologies": [
+                "Technology 1",
+                "Technology 2",
+                "Technology 3"
+            ]
+        },
+        {
+            "name": "Project Name",
+            "description": "Project Description",
+            "technologies": [
+                "Technology 1",
+                "Technology 2",
+                "Technology 3"
+            ]
+        }
+    ]
 }
