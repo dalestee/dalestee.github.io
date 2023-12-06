@@ -7,6 +7,12 @@ let inputCooldown2 = 0
 
 let running;
 
+window.addEventListener("keydown", function(e) {
+    if(["Space","ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) {
+        e.preventDefault();
+    }
+}, false);
+
 function createPlayer(color, x, y) {
   player = new Sprite();
   player.x = x;
@@ -23,7 +29,7 @@ function createPlayer(color, x, y) {
 }
 
 function setup() {
-  new Canvas(window.innerWidth - 20, window.innerHeight - 20);
+  new Canvas(window.innerWidth*0.66 - 20, window.innerHeight*0.66 - 20);
   player1 = createPlayer("cyan", (window.innerWidth / 2) - 10, window.innerHeight / 2);
   player2 = createPlayer("orange", (window.innerWidth / 2) + 10, window.innerHeight / 2);
   
