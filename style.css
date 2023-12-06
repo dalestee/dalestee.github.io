@@ -114,8 +114,9 @@ header {
 }
 
 .preview {
-    height: 5rem;
+    height: 10rem;
     width: auto;
+    border-radius: 5px;
 }
 /* Main styles */
 main {

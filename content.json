@@ -30,7 +30,7 @@
         {
             "name": "tron",
             "description": "tron game with 2 players",
-            "image":"media/js.png",
+            "image":"media/tron.png",
             "link": "tron.html",
             "technologies": [
                 "P5Play.js",
