@@ -19,12 +19,11 @@
         {
             "name": "Genrative Art",
             "description": "Js projects using p5.js or just a canvas to generate art",
-            "image":"media/js.png",
+            "image":"media/generativeArt.png",
             "link": "generativeArt.html",
+            "parent": "JS",
             "technologies": [
-                "P5.js",
-                "none",
-                "none"
+                "P5.js"
             ]
         },
         {
@@ -32,10 +31,31 @@
             "description": "tron game with 2 players",
             "image":"media/tron.png",
             "link": "tron.html",
+            "parent": "JS",
             "technologies": [
-                "P5Play.js",
-                "none",
-                "none"
+                "P5Play.js"
+            ]
+        },
+        {
+            "name": "digit recognition",
+            "description": "digit recognition using a neural network withg numpy",
+            "image":"media/digitRecognition.png",
+            "link": "https://github.com/dalestee/digit-recognizer-model",
+            "parent": "Python",
+            "technologies": [
+                "Numpy",
+                "Matplotlib",
+                "Pandas"
+            ]
+        },
+        {
+            "name": "pyrisk",
+            "description": "Risk game in python using tkinter",
+            "image":"media/pyrisk.png",
+            "link": "https://github.com/dalestee/PYRISK",
+            "parent": "Python",
+            "technologies": [
+                "Tkinter"
             ]
         }
     ]

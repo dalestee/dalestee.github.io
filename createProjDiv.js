@@ -21,9 +21,10 @@ function readJson() {
         var description = project.description;
         var image = project.image;
         var link = project.link;
+        var parent = project.parent;
         var technologies = project.technologies;
         var newDiv = createProjectDiv(name, description, image, link, technologies);
-        var rightDiv = document.getElementById("projects");
+        var rightDiv = document.getElementById(parent);
         rightDiv.appendChild(newDiv);
       }
     });
