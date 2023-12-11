@@ -57,6 +57,19 @@
             "technologies": [
                 "Tkinter"
             ]
+        },
+        {
+            "name": "dating sim",
+            "description": "A web dating simulator for a hackathon using php, js, html and css",
+            "image":"media/datingSim.png",
+            "link": "dateSim.html",
+            "parent": "PHP",
+            "technologies": [
+                "PHP",
+                "HTML",
+                "CSS",
+                "JS"
+            ]
         }
     ]
 }
