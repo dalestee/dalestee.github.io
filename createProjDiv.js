@@ -22,8 +22,8 @@ function readJson() {
         var image = project.image;
         var link = project.link;
         var parent = project.parent;
-        var technologies = project.technologies;
-        var newDiv = createProjectDiv(name, description, image, link, technologies);
+        var skills = project.skills;
+        var newDiv = createProjectDiv(name, description, image, link, skills);
         var rightDiv = document.getElementById(parent);
         rightDiv.appendChild(newDiv);
       }
@@ -66,7 +66,9 @@ function createExperienceDiv(company, role, date, description, link) {
     var p = document.createElement("p");
     p.textContent = description;
     projDiv.appendChild(p);
-  
+
+
+
     // Append the proj div to the main div
     experienceDiv.appendChild(projDiv);
   
@@ -74,7 +76,7 @@ function createExperienceDiv(company, role, date, description, link) {
     return experienceDiv;
   }
 
-  function createProjectDiv(name, description, image, link, technologies) {
+  function createProjectDiv(name, description, image, link, skills) {
     // Create the main div
     var experienceDiv = document.createElement("div");
     experienceDiv.className = "experience";
@@ -87,9 +89,9 @@ function createExperienceDiv(company, role, date, description, link) {
     descriptionDiv.className = "description";
   
     // Create and append the h4, h5, and h6 elements
-    var h4 = document.createElement("h4");
-    h4.textContent = name;
-    descriptionDiv.appendChild(h4);
+    var h3 = document.createElement("h3");
+    h3.textContent = name;
+    descriptionDiv.appendChild(h3);
   
     var imageb = document.createElement("img");
     imageb.className = "preview";
@@ -106,13 +108,27 @@ function createExperienceDiv(company, role, date, description, link) {
     var p = document.createElement("p");
     p.textContent = description;
     descriptionDiv.appendChild(p);
+
+      var h3 = document.createElement("h3");
+    h3.textContent = "Skills";
+    descriptionDiv.appendChild(h3);
+
+    // Create and append the ul element for skills
+    var ul = document.createElement("ul");
+    ul.style.textAlign = "left";
+    skills.forEach(skill => {
+        var li = document.createElement("li");
+        li.textContent = skill;
+        ul.appendChild(li);
+    });
+    descriptionDiv.appendChild(ul);
   
     // Append the proj div to the main div
     experienceDiv.appendChild(projDiv);
   
     // Return the main div
     return experienceDiv;
-  }
+}
   
   // Use the function to create a new div and append it to the body
   readJson();

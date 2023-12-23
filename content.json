@@ -18,12 +18,13 @@
     "projects": [
         {
             "name": "Genrative Art",
-            "description": "Js projects using p5.js or just a canvas to generate art",
+            "description": "Js projects using p5.js or just a canvas to generate art, playing with perlin noise and prime numbers displayed with polar coordinates.",
             "image":"media/generativeArt.png",
             "link": "generativeArt.html",
             "parent": "JS",
-            "technologies": [
-                "P5.js"
+            "skills": [
+                "P5.js",
+                "maths"
             ]
         },
         {
@@ -32,8 +33,10 @@
             "image":"media/tron.png",
             "link": "tron.html",
             "parent": "JS",
-            "technologies": [
-                "P5Play.js"
+            "skills": [
+                "P5Play.js",
+                "fast learning",
+                "limited time"
             ]
         },
         {
@@ -42,10 +45,13 @@
             "image":"media/digitRecognition.png",
             "link": "https://github.com/dalestee/digit-recognizer-model",
             "parent": "Python",
-            "technologies": [
+            "skills": [
                 "Numpy",
                 "Matplotlib",
-                "Pandas"
+                "Pandas",
+                "Neural Network",
+                "Machine Learning",
+                "Data Science"
             ]
         },
         {
@@ -54,21 +60,23 @@
             "image":"media/pyrisk.png",
             "link": "https://github.com/dalestee/PYRISK",
             "parent": "Python",
-            "technologies": [
-                "Tkinter"
+            "skills": [
+                "Tkinter",
+                "teamwork",
+                "git"
             ]
         },
         {
             "name": "dating sim",
-            "description": "A web dating simulator for a hackathon using php, js, html and css",
-            "image":"media/datingSim.png",
+            "description": "A web dating simulator for a hackathon using php, js, html and css. While on a hackathon, we had to make a app/website in 16 hours. for an association.",
+            "image":"media/dating/date_default_conv.png",
             "link": "dateSim.html",
             "parent": "PHP",
-            "technologies": [
-                "PHP",
-                "HTML",
-                "CSS",
-                "JS"
+            "skills": [
+                "teamwork",
+                "limited time",
+                "git",
+                "client demand"
             ]
         }
     ]
