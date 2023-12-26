@@ -18,6 +18,23 @@ body {
     padding: 0;
     font-family: 'montserrat', sans-serif;
 }
+
+h3 {
+  padding: 30px 0 8px;
+  position: relative;
+}
+
+h3::before {
+  content: "";
+  position: absolute;
+  left: 7%;
+  bottom: 16px;
+  width: 150px;
+  height: 14px;
+  transform: skew(-12deg) translateX(-40%);
+  background: rgba(255, 255, 255, 0.521);
+  z-index: -1;
+}
   
 /* Header styles */
 header {

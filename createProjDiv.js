@@ -89,9 +89,9 @@ function createExperienceDiv(company, role, date, description, link) {
     descriptionDiv.className = "description";
   
     // Create and append the h4, h5, and h6 elements
-    var h3 = document.createElement("h3");
-    h3.textContent = name;
-    descriptionDiv.appendChild(h3);
+    var h4 = document.createElement("h4");
+    h4.textContent = name;
+    descriptionDiv.appendChild(h4);
   
     var imageb = document.createElement("img");
     imageb.className = "preview";
@@ -109,9 +109,9 @@ function createExperienceDiv(company, role, date, description, link) {
     p.textContent = description;
     descriptionDiv.appendChild(p);
 
-      var h3 = document.createElement("h3");
-    h3.textContent = "Skills";
-    descriptionDiv.appendChild(h3);
+      var h4 = document.createElement("h4");
+    h4.textContent = "Skills";
+    descriptionDiv.appendChild(h4);
 
     // Create and append the ul element for skills
     var ul = document.createElement("ul");
