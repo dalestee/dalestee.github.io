@@ -11,6 +11,11 @@ html {
     scroll-behavior: smooth;
 }
 
+#JS #PHP #Python {
+    display: flex;
+    justify-content: center;
+}
+
 /* Body styles */
 body {
     background-color: var(--primary-color);
