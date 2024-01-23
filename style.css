@@ -67,7 +67,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: baseline;
+    align-items: center;
     height: 100%;
     line-height: 1.6;
     position: sticky;
