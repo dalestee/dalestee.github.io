@@ -29,106 +29,111 @@ function readJson() {
       }
     });
 }
-      
+
 
 function createExperienceDiv(company, role, date, description, link) {
-    // Create the main div
-    var experienceDiv = document.createElement("div");
-    experienceDiv.className = "experience";
-    experienceDiv.style.cursor = "pointer";
-    experienceDiv.onclick = function() { window.location = link; };
-  
-    // Create the description div
-    var descriptionDiv = document.createElement("div");
-    descriptionDiv.className = "description";
-  
-    // Create and append the h4, h5, and h6 elements
-    var h4 = document.createElement("h4");
-    h4.textContent = company;
-    descriptionDiv.appendChild(h4);
-  
-    var h5 = document.createElement("h5");
-    h5.textContent = role;
-    descriptionDiv.appendChild(h5);
-  
-    var h6 = document.createElement("h6");
-    h6.textContent = date;
-    descriptionDiv.appendChild(h6);
-  
-    // Append the description div to the main div
-    experienceDiv.appendChild(descriptionDiv);
-  
-    // Create the proj div
-    var projDiv = document.createElement("div");
-    projDiv.className = "proj";
-  
-    // Create and append the p element
-    var p = document.createElement("p");
-    p.textContent = description;
-    projDiv.appendChild(p);
+  // Create the main div
+  var experienceDiv = document.createElement("div");
+  experienceDiv.className = "experience";
+  experienceDiv.style.cursor = "pointer";
+  experienceDiv.onclick = function () { window.location = link; };
+
+  // Create the description div
+  var descriptionDiv = document.createElement("div");
+  descriptionDiv.className = "description";
+
+  // Create and append the h4, h5, and h6 elements
+  var h4 = document.createElement("h4");
+  h4.textContent = company;
+  descriptionDiv.appendChild(h4);
+
+  var h5 = document.createElement("h5");
+  h5.textContent = role;
+  descriptionDiv.appendChild(h5);
+
+  var h6 = document.createElement("h6");
+  h6.textContent = date;
+  descriptionDiv.appendChild(h6);
+
+  // Append the description div to the main div
+  experienceDiv.appendChild(descriptionDiv);
+
+  // Create the proj div
+  var projDiv = document.createElement("div");
+  projDiv.className = "proj";
+
+  // Create and append the p element
+  var p = document.createElement("p");
+  p.textContent = description;
+  projDiv.appendChild(p);
 
 
 
-    // Append the proj div to the main div
-    experienceDiv.appendChild(projDiv);
-  
-    // Return the main div
-    return experienceDiv;
-  }
+  // Append the proj div to the main div
+  experienceDiv.appendChild(projDiv);
 
-  function createProjectDiv(name, description, image, link, skills) {
-    // Create the main div
-    var experienceDiv = document.createElement("div");
-    experienceDiv.className = "experience";
-    experienceDiv.style.cursor = "pointer";
-    experienceDiv.onclick = function() { window.location = link; };
-  
-    // Create the description div
-    var descriptionDiv = document.createElement("div");
-    var projDiv = document.createElement("div");
-    descriptionDiv.className = "description";
-  
-    // Create and append the h4, h5, and h6 elements
-    var h4 = document.createElement("h4");
-    h4.textContent = name;
-    descriptionDiv.appendChild(h4);
-  
-    var imageb = document.createElement("img");
-    imageb.className = "preview";
-    imageb.src = image;
-    projDiv.appendChild(imageb);
-  
-    // Append the description div to the main div
-    experienceDiv.appendChild(descriptionDiv);
-  
-    // Create the proj div
-    projDiv.className = "proj";
-  
-    // Create and append the p element
-    var p = document.createElement("p");
-    p.textContent = description;
-    descriptionDiv.appendChild(p);
-
-      var h4 = document.createElement("h4");
-    h4.textContent = "Skills";
-    descriptionDiv.appendChild(h4);
-
-    // Create and append the ul element for skills
-    var ul = document.createElement("ul");
-    ul.style.textAlign = "left";
-    skills.forEach(skill => {
-        var li = document.createElement("li");
-        li.textContent = skill;
-        ul.appendChild(li);
-    });
-    descriptionDiv.appendChild(ul);
-  
-    // Append the proj div to the main div
-    experienceDiv.appendChild(projDiv);
-  
-    // Return the main div
-    return experienceDiv;
+  // Return the main div
+  return experienceDiv;
 }
-  
-  // Use the function to create a new div and append it to the body
-  readJson();
+
+function createProjectDiv(name, description, image, link, skills) {
+  // Create the main div
+  var experienceDiv = document.createElement("div");
+  experienceDiv.className = "experience";
+  experienceDiv.style.cursor = "pointer";
+  experienceDiv.onclick = function () { window.location = link; };
+
+  // Create the description div
+  var descriptionDiv = document.createElement("div");
+  var projDiv = document.createElement("div");
+  descriptionDiv.className = "description";
+
+  // Create and append the h4, h5, and h6 elements
+  var h4 = document.createElement("h4");
+  h4.textContent = name;
+  descriptionDiv.appendChild(h4);
+
+  var imageb = document.createElement("img");
+  imageb.className = "preview";
+  imageb.src = image;
+  projDiv.appendChild(imageb);
+
+  // Append the description div to the main div
+  experienceDiv.appendChild(descriptionDiv);
+
+  // Create the proj div
+  projDiv.className = "proj";
+
+  // Create and append the p element
+  var p = document.createElement("p");
+  p.textContent = description;
+  descriptionDiv.appendChild(p);
+
+  var h4 = document.createElement("h4");
+  h4.textContent = "Skills";
+  descriptionDiv.appendChild(h4);
+
+  // Create and append the ul element for skills
+  var ul = document.createElement("ul");
+  ul.style.textAlign = "left";
+  skills.forEach(skill => {
+    var li = document.createElement("li");
+    li.textContent = skill;
+    ul.appendChild(li);
+  });
+  descriptionDiv.appendChild(ul);
+
+  // Append the proj div to the main div
+  experienceDiv.appendChild(projDiv);
+
+  // Return the main div
+  return experienceDiv;
+}
+
+// Use the function to create a new div and append it to the body
+readJson();
+
+document.querySelector('.link').addEventListener('click', function (e) {
+  e.preventDefault();
+  document.querySelector('#experiences').scrollIntoView({ behavior: 'smooth' });
+});

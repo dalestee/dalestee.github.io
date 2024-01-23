@@ -78,6 +78,18 @@
                 "git",
                 "client demand"
             ]
+        },
+        {
+            "name": "SeriesTracker",
+            "description": "A web app to track your series, using php, js, html and css. Made while in a team project for school.",
+            "image":"media/seriesTracker.png",
+            "link": "seriesTracker.html",
+            "parent": "PHP",
+            "skills": [
+                "teamwork",
+                "client relations",
+                "git"
+            ]
         }
     ]
 }
