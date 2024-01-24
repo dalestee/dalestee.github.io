@@ -82,13 +82,15 @@
         {
             "name": "SeriesTracker",
             "description": "A web app to track your series, using php, js, html and css. Made while in a team project for school.",
-            "image":"media/seriesTracker.png",
-            "link": "seriesTracker.html",
+            "image":"media/seriesTrackerFolder/main.png",
+            "link": "series.html",
             "parent": "PHP",
             "skills": [
                 "teamwork",
                 "client relations",
-                "git"
+                "git",
+                "Symfony",
+                "MySQL"
             ]
         }
     ]
