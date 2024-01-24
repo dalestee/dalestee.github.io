@@ -1,77 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <title>Godinat Caetano</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Godinat Caetano</title>
 </head>
+
 <body>
-    <header>
-      <h1>Generative art</h1>
-      <div class="description">
-        <img class="icons" src="media/js.png" alt="">
-        <p>
-          This is a generative art project made with p5.js. <br>
-          It is based on a noise function that is used to generate the position, rotation and color of the shapes. <br>
-          The parameters of the noise function can be changed in the config menu.
-        </p>
-      </div>
-    </header>
-    <div id="arts">
-    <main>
-        <div id="config">
-          <button class="button" onclick="applyChanges()">reset/apply</button>
-          <button class="button" onclick="randomize()">surprise me!</button>
-          <br>
-          <label for="noiseScaleChoice">Noise scale (0.00001 to 1):</label>
-          <input class= "input" type="number" id="noiseScaleChoice" min="0.00001" max="1">
-          <br>
-          <label for="speedXChoice">Speed X (1 to 50):</label>
-          <input class= "input" type="number" id="speedXChoice" min="1" max="50">
-          <br>
-          <label for="speedYChoice">Speed Y (1 to 50):</label>
-          <input class= "input" type="number" id="speedYChoice" min="1" max="50">
-          <br>
-          <label for="rotationChoice">Rotation scale (1 to 150):</label>
-          <input class= "input" type="number" id="rotationChoice" min="0" max="150">
-          <br>
-          <label for="redChoice">Red (0 to 255):</label>
-          <input class= "input" type="number" id="redChoice" min="0" max="255">
-          <br>
-          <label for="greenChoice">Green (0 to 255):</label>
-          <input class= "input" type="number" id="greenChoice" min="0" max="255">
-          <br>
-          <label for="blueChoice">Blue (0 to 255):</label>
-          <input class= "input" type="number" id="blueChoice" min="0" max="255">
-        </div>
-      </main>
-      <div class="description">
-        <p>
-          This is a prime spiral made with pure JS <br>
-          The script places points that have even polar coordinates <br>
-        </p>
-        <canvas style="background-color: black;" id="canvas"></canvas>
-      </div>
+  <header>
+    <h1>Generative art</h1>
+    <a href="index.html" class="link" style="font-size: 2rem;">Back</a>
+    <br>
+    <br>
+    <div class="description">
+      <img class="icons" src="media/js.png" alt="">
+      <p>
+        This is a generative art project made with p5.js. <br>
+        It is based on a noise function that is used to generate the position, rotation and color of the shapes. <br>
+        The parameters of the noise function can be changed in the config menu.
+      </p>
     </div>
-    <footer>
-      <div>
-        <a href="mailto:caetano.godinat@etu.u-bordeaux.fr" target="_blank"> 
+  </header>
+  <div id="arts">
+    <main>
+      <div id="config">
+        <button class="button" onclick="applyChanges()">reset/apply</button>
+        <button class="button" onclick="randomize()">surprise me!</button>
+        <br>
+        <label for="noiseScaleChoice">Noise scale (0.00001 to 1):</label>
+        <input class="input" type="number" id="noiseScaleChoice" min="0.00001" max="1">
+        <br>
+        <label for="speedXChoice">Speed X (1 to 50):</label>
+        <input class="input" type="number" id="speedXChoice" min="1" max="50">
+        <br>
+        <label for="speedYChoice">Speed Y (1 to 50):</label>
+        <input class="input" type="number" id="speedYChoice" min="1" max="50">
+        <br>
+        <label for="rotationChoice">Rotation scale (1 to 150):</label>
+        <input class="input" type="number" id="rotationChoice" min="0" max="150">
+        <br>
+        <label for="redChoice">Red (0 to 255):</label>
+        <input class="input" type="number" id="redChoice" min="0" max="255">
+        <br>
+        <label for="greenChoice">Green (0 to 255):</label>
+        <input class="input" type="number" id="greenChoice" min="0" max="255">
+        <br>
+        <label for="blueChoice">Blue (0 to 255):</label>
+        <input class="input" type="number" id="blueChoice" min="0" max="255">
+      </div>
+    </main>
+    <div class="description">
+      <p>
+        This is a prime spiral made with pure JS <br>
+        The script places points that have even polar coordinates <br>
+      </p>
+      <canvas style="background-color: black;" id="canvas"></canvas>
+    </div>
+  </div>
+  <footer>
+    <div>
+      <a href="mailto:caetano.godinat@etu.u-bordeaux.fr" target="_blank">
         <img class="icons" src="media/email-modified.png" alt="">
-        </a>
-      </div>
-      <div>
-        <a href="https://github.com/dalestee/" target="_blank"> 
+      </a>
+    </div>
+    <div>
+      <a href="https://github.com/dalestee/" target="_blank">
         <img class="icons" src="media/github-mark-white.png" alt="">
-        </a>
-      </div>
-      <div>
-        <a href="https://www.linkedin.com/in/caetano-godinat-849980270/" target="_blank"> 
+      </a>
+    </div>
+    <div>
+      <a href="https://www.linkedin.com/in/caetano-godinat-849980270/" target="_blank">
         <img class="icons" src="media/linkedin.png" alt="">
-        </a>
-      </div>
-    </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
-    <script src="genArt.js"></script>
-    <script src="primeSpiral.js"></script>
+      </a>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+  <script src="genArt.js"></script>
+  <script src="primeSpiral.js"></script>
 </body>
+
 </html>
