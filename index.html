@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Godinat Caetano</title>
 </head>
 
-<body>
-    <header>
+<body class="bg-primary text-quaternary m-0 p-0 font-montserrat">
+    <header class="flex items-center justify-center bg-primary text-quaternary p-5 bg-gradient-to-t from-primary to-secondary font-ubuntu">
     </header>
-    <div id="division">
-        <div id="left">
+    <div class="flex flex-row justify-around" id="division">
+        <div class="text-tertiary flex flex-col justify-around items-center h-full leading-6 sticky top-12 space-y-4">
             <div id="icon"><a href="mailto:caetano.godinat@etu.u-bordeaux.fr" target="_blank">
                     <img class="icons" src="media/email-modified.png" alt="">
                 </a>
@@ -23,21 +24,21 @@
                 </a>
             </div>
             <h1>Godinat Caetano</h1>
-            <h3>Bachelor Student in Computer Science</h3>
+            <h3 class="text-center text-lg py-8 relative">Bachelor Student in Computer Science</h3>
             A versatile and curious student,<br>
             I am currently studying computer science<br>
             at the University of Bordeaux.
             <br>
             <br>
-            <a class="link" href="#experiences">Experiences</a>
+            <a class="text-center border-b border-quaternary text-quaternary no-underline" href="#experiences">Experiences</a>
             <br>
-            <a class="link" href="#Python">Python</a>
+            <a class="text-center border-b border-quaternary text-quaternary no-underline" href="#Python">Python</a>
             <br>
-            <a class="link" href="#PHP">PHP</a>
+            <a class="text-center border-b border-quaternary text-quaternary no-underline" href="#PHP">PHP</a>
             <br>
-            <a class="link" href="#JS">JS</a>
+            <a class="text-center border-b border-quaternary text-quaternary no-underline" href="#JS">JS</a>
         </div>
-        <div id="right">
+        <div class="flex w-1/2 flex-col justify-around items-center">
             <p>
                 As someone who is passionate about computer science, I am always looking for new projects to work on,
                 even though don't have the opportunity to finish them all, I always <span>enjoy to learn new
@@ -47,18 +48,18 @@
                 Today my main focus is on the <span>SSL team NAMEC, where I am working on the software of a robot for
                     the SSL league.</span>
             </p>
-            <h3>Experience</h3>
+            <h3 class="text-center text-lg py-8 relative">Experience</h3>
             <div id="experiences">
             </div>
-            <h3>Projects</h3>
+            <h3 class="text-center text-lg py-8 relative">Projects</h3>
             <div id="Python">
-                <h3>Python</h3>
+                <h3 class="text-center text-lg py-8 relative">Python</h3>
             </div>
             <div id="PHP">
-                <h3>PHP</h3>
+                <h3 class="text-center text-lg py-8 relative">PHP</h3>
             </div>
             <div id="JS">
-                <h3>JS</h3>
+                <h3 class="text-center text-lg py-8 relative">JS</h3>
             </div>
         </div>
     </div>
