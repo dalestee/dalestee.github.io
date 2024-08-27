@@ -79,43 +79,44 @@ function createExperienceDiv(company, role, date, description, link) {
 function createProjectDiv(name, description, image, link, skills) {
   // Create the main div
   var experienceDiv = document.createElement("div");
-  experienceDiv.className = "experience";
+  experienceDiv.className = "experience flex flex-col justify-around items-center";
   experienceDiv.style.cursor = "pointer";
   experienceDiv.onclick = function () { window.location = link; };
 
   // Create the description div
   var descriptionDiv = document.createElement("div");
-  var projDiv = document.createElement("div");
-  descriptionDiv.className = "description";
+  descriptionDiv.className = "description text-center";
 
-  // Create and append the h4, h5, and h6 elements
+  // Create and append the h4 element for the project name
   var h4 = document.createElement("h4");
   h4.textContent = name;
   descriptionDiv.appendChild(h4);
 
+  // Create the proj div
+  var projDiv = document.createElement("div");
+  projDiv.className = "proj flex justify-center items-center"; // Center both horizontally and vertically
+  
   var imageb = document.createElement("img");
-  imageb.className = "preview";
+  imageb.className = "preview object-cover object-cover h-auto mx-auto"; // Center horizontally
   imageb.src = image;
   projDiv.appendChild(imageb);
 
   // Append the description div to the main div
   experienceDiv.appendChild(descriptionDiv);
 
-  // Create the proj div
-  projDiv.className = "proj";
-
-  // Create and append the p element
+  // Create and append the p element for the project description
   var p = document.createElement("p");
   p.textContent = description;
   descriptionDiv.appendChild(p);
 
-  var h4 = document.createElement("h4");
-  h4.textContent = "Skills";
-  descriptionDiv.appendChild(h4);
+  // Create and append the h4 element for skills
+  var skillsHeader = document.createElement("h4");
+  skillsHeader.textContent = "Skills";
+  descriptionDiv.appendChild(skillsHeader);
 
   // Create and append the ul element for skills
   var ul = document.createElement("ul");
-  ul.style.textAlign = "left";
+  ul.className = "text-left";
   skills.forEach(skill => {
     var li = document.createElement("li");
     li.textContent = skill;
