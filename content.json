@@ -67,6 +67,20 @@
             ]
         },
         {
+            "name": "SeriesTracker",
+            "description": "A web app to track your series, using php, js, html and css. Made while in a team project for school.",
+            "image":"media/seriesTrackerFolder/main.png",
+            "link": "series.html",
+            "parent": "PHP",
+            "skills": [
+                "teamwork",
+                "client relations",
+                "git",
+                "Symfony",
+                "MySQL"
+            ]
+        },
+        {
             "name": "dating sim",
             "description": "A web dating simulator for a hackathon using php, js, html and css. While on a hackathon, we had to make a app/website in 16 hours. for an association.",
             "image":"media/dating/date_default_conv.png",
@@ -80,17 +94,29 @@
             ]
         },
         {
-            "name": "SeriesTracker",
-            "description": "A web app to track your series, using php, js, html and css. Made while in a team project for school.",
-            "image":"media/seriesTrackerFolder/main.png",
-            "link": "series.html",
-            "parent": "PHP",
+            "name": "SSL robot behavior",
+            "description": "SSL is a robot soccer league, basically my job is to make the robot move and play soccer. I am working on the behavior of the robot using our own Rust 'Crabe' framework.",
+            "image":"media/ssl/NAMeC.jpg",
+            "link": "https://github.com/NAMeC-team",
+            "parent": "Rust",
             "skills": [
+                "Rust",
                 "teamwork",
-                "client relations",
-                "git",
-                "Symfony",
-                "MySQL"
+                "robotics",
+                "git"
+            ]
+        },
+        {
+            "name": "Japan Internship / Hasktorch",
+            "description": "My Internship in Japan, where I researched on machine learning using Hasktorch, a haskell binding for torch. I worked on the project for 2 months.",
+            "image":"media/Japan/internship.png",
+            "link": "haskell.html",
+            "parent": "Haskell",
+            "skills": [
+                "Haskell",
+                "Hasktorch",
+                "autonomy",
+                "curiosity"
             ]
         }
     ]
