@@ -94,7 +94,7 @@
             ]
         },
         {
-            "name": "SSL robot behavior",
+            "name": "SSL robot behavior / robocup",
             "description": "SSL is a robot soccer league, basically my job is to make the robot move and play soccer. I am working on the behavior of the robot using our own Rust 'Crabe' framework.",
             "image":"media/ssl/NAMeC.jpg",
             "link": "https://github.com/NAMeC-team",
